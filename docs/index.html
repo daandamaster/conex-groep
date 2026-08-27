@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conex Groep — klantpreview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#0B1C2D; --lime:#A8E10C; --paper:#F4F6F3; --ink:#0B1C2D; --muted:#4A5A68; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Inter,system-ui,sans-serif; background:var(--paper); color:var(--ink); }
+    a { color:inherit; text-decoration:none; }
+    nav { position:sticky; top:0; z-index:20; background:rgba(11,28,45,.94); color:#fff; display:flex; justify-content:space-between; align-items:center; padding:14px 5%; border-bottom:1px solid rgba(168,225,12,.2); }
+    .logo { font-family:Syne,sans-serif; font-weight:800; }
+    .logo span { color:var(--lime); }
+    .badge { font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--navy); background:var(--lime); padding:6px 10px; border-radius:999px; }
+    .hero { min-height:78vh; color:#fff; position:relative; display:flex; align-items:flex-end; padding:72px 5% 56px; overflow:hidden; background:var(--navy); }
+    .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.45; }
+    .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(11,28,45,.95), rgba(11,28,45,.45) 70%); }
+    .hero-inner { position:relative; z-index:1; max-width:720px; }
+    .kicker { color:var(--lime); font-size:.78rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; margin-bottom:12px; }
+    h1 { font-family:Syne,sans-serif; font-size:clamp(2.2rem,6vw,4rem); line-height:1.05; margin-bottom:16px; }
+    h1 em { color:var(--lime); font-style:normal; }
+    .hero p { color:#A0B0C0; max-width:46ch; margin-bottom:28px; }
+    .btn { display:inline-flex; background:var(--lime); color:var(--navy); font-weight:800; padding:14px 22px; border-radius:999px; }
+    .wrap { max-width:1100px; margin:0 auto; padding:72px 5%; }
+    h2 { font-family:Syne,sans-serif; font-size:clamp(1.6rem,4vw,2.4rem); margin-bottom:10px; }
+    .sub { color:var(--muted); margin-bottom:32px; max-width:52ch; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+    .card { background:#fff; border-radius:16px; padding:22px; border:1px solid rgba(11,28,45,.08); }
+    .card h3 { font-family:Syne,sans-serif; margin-bottom:8px; }
+    .card p { color:var(--muted); font-size:.95rem; }
+    .branch { position:relative; min-height:260px; border-radius:16px; overflow:hidden; color:#fff; display:flex; align-items:flex-end; }
+    .branch img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .branch::after { content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(11,28,45,.9), transparent 55%); }
+    .branch .txt { position:relative; z-index:1; padding:20px; }
+    .cta { background:var(--navy); color:#fff; }
+    .cta .wrap { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; }
+    .cta img { width:100%; height:280px; object-fit:cover; border-radius:16px; }
+    .cta p { color:#A0B0C0; margin:12px 0 22px; }
+    footer { background:var(--navy); color:#8899aa; padding:36px 5%; font-size:.88rem; }
+    footer strong { color:#fff; }
+    @media (max-width:800px) { .cta .wrap { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CONEX<span>GROEP</span></div>
+    <div class="badge">Klantpreview</div>
+  </nav>
+  <section class="hero">
+    <img src="https://cdn.jsdelivr.net/gh/daandamaster/conex-groep@main/public/media/hero.jpg" alt="" />
+    <div class="hero-inner">
+      <div class="kicker">Bouw · Techniek · Installatie</div>
+      <h1>Haal het beste uit elke <em>werkdag</em></h1>
+      <p>Wij vinden het belangrijk dat iedereen in de bouw en techniek met plezier werkt. Jouw werk start hier.</p>
+      <a class="btn" href="tel:0367519799">036 751 9799</a>
+    </div>
+  </section>
+  <section class="wrap">
+    <h2>Zoeken. Zorgen. Zij-aan-zij.</h2>
+    <p class="sub">Zo halen medewerkers en werkgevers het beste uit elke opdracht.</p>
+    <div class="grid">
+      <article class="card"><h3>Zoeken</h3><p>We luisteren eerst naar wat je nodig hebt. Pas daarna zoeken we.</p></article>
+      <article class="card"><h3>Zorgen</h3><p>Contract, uitbetaling en een vast gezicht.</p></article>
+      <article class="card"><h3>Zij-aan-zij</h3><p>Is er een uitdaging op de bouwplaats? Dan staan we er.</p></article>
+    </div>
+  </section>
+  <section class="wrap" style="padding-top:0">
+    <h2>Kies je branche</h2>
+    <div class="grid">
+      <div class="branch"><img src="https://cdn.jsdelivr.net/gh/daandamaster/conex-groep@main/public/media/branche-bouw.jpg" alt="" /><div class="txt"><h3>Bouw</h3><p>Uitvoerders, timmerlieden, werkvoorbereiders.</p></div></div>
+      <div class="branch"><img src="https://cdn.jsdelivr.net/gh/daandamaster/conex-groep@main/public/media/branche-techniek.jpg" alt="" /><div class="txt"><h3>Techniek</h3><p>Elektro, WTB, engineers, calculators.</p></div></div>
+      <div class="branch"><img src="https://cdn.jsdelivr.net/gh/daandamaster/conex-groep@main/public/media/branche-installatie.jpg" alt="" /><div class="txt"><h3>Installatie</h3><p>Service, klimaat, montage.</p></div></div>
+    </div>
+  </section>
+  <section class="wrap" style="padding-top:0">
+    <h2>Werkvormen</h2>
+    <div class="grid">
+      <article class="card"><h3>Uitzenden</h3><p>Snel de juiste vakmensen. Wij werven, screenen en begeleiden.</p></article>
+      <article class="card"><h3>Werving & selectie</h3><p>De juiste professional voor een vaste rol.</p></article>
+      <article class="card"><h3>Detachering</h3><p>Jij kiest opdracht en duur. Wij regelen contract en uitbetaling.</p></article>
+      <article class="card"><h3>ZZP</h3><p>Zelfstandig werken, DBA-bewust.</p></article>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="wrap">
+      <img src="https://cdn.jsdelivr.net/gh/daandamaster/conex-groep@main/public/media/cta-dusk.jpg" alt="" />
+      <div>
+        <div class="kicker">Gesprek</div>
+        <h2>Conex. Werk. Gewoon goed geregeld.</h2>
+        <p>Almere · Transistorstraat 31 · 036 751 9799 · KvK 92108156</p>
+        <a class="btn" href="tel:0367519799">Plan een gesprek</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <strong>Conex Groep B.V.</strong> · Publieke klantpreview van de nieuwe website.
+  </footer>
+</body>
+</html>
