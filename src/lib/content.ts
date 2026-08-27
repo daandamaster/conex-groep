@@ -1,3 +1,5 @@
+import { media } from "./media";
+
 export const COMPANY = {
   name: "Conex Groep",
   legal: "Conex Groep B.V.",
@@ -98,9 +100,9 @@ export const APPROACH = [
 ];
 
 export const BRANCHES = [
-  { slug: "bouw", title: "Bouw", body: "Uitvoerders, timmerlieden, werkvoorbereiders.", image: "/media/branche-bouw.jpg" },
-  { slug: "techniek", title: "Techniek", body: "Elektro, WTB, engineers, calculators.", image: "/media/branche-techniek.jpg" },
-  { slug: "installatie", title: "Installatie", body: "Service, klimaat, montage.", image: "/media/branche-installatie.jpg" },
+  { slug: "bouw", title: "Bouw", body: "Uitvoerders, timmerlieden, werkvoorbereiders.", image: media("branche-bouw.jpg") },
+  { slug: "techniek", title: "Techniek", body: "Elektro, WTB, engineers, calculators.", image: media("branche-techniek.jpg") },
+  { slug: "installatie", title: "Installatie", body: "Service, klimaat, montage.", image: media("branche-installatie.jpg") },
 ];
 
 export const CERTS = ["VCA", "KVK 92108156", "G-rekening", "NEN-bewust", "DBA-toets"];

@@ -1,3 +1,4 @@
+import { media } from "./media";
 export type ArticleSection = {
   heading?: string;
   paragraphs: string[];
@@ -31,7 +32,7 @@ export const ARTICLES: Article[] = [
     date: "16 september 2025",
     category: "Wetgeving",
     minutes: 11,
-    cover: "/media/branche-techniek.jpg",
+    cover: media("branche-techniek.jpg"),
     excerpt:
       "Niet de krantenkop, wel je tarief, je aftrek en of opdrachtgevers nog ZZP inkopen. Dit is de vertaling naar de bouwplaats.",
     sections: [
@@ -87,7 +88,7 @@ export const ARTICLES: Article[] = [
     date: "12 augustus 2025",
     category: "Wet DBA",
     minutes: 12,
-    cover: "/media/hero.jpg",
+    cover: media("hero.jpg"),
     excerpt:
       "Augustus is te laat om te beginnen, net op tijd om te herijken. Zo kom je het najaar door zonder gedoe.",
     sections: [
@@ -142,7 +143,7 @@ export const ARTICLES: Article[] = [
     date: "28 juli 2025",
     category: "Praktijk",
     minutes: 10,
-    cover: "/media/branche-installatie.jpg",
+    cover: media("branche-installatie.jpg"),
     excerpt:
       "Opdrachtgevers checken strenger. Dit mag je verwachten, dit hoef je niet te slikken, en zo formuleer je het.",
     sections: [
@@ -197,7 +198,7 @@ export const ARTICLES: Article[] = [
     date: "4 juni 2025",
     category: "Wet DBA",
     minutes: 9,
-    cover: "/media/branche-techniek.jpg",
+    cover: media("branche-techniek.jpg"),
     excerpt:
       "Een korte check voor je een opdracht aanneemt. Drie stappen, geen juridisch proza, wél een besluit.",
     sections: [
@@ -247,7 +248,7 @@ export const ARTICLES: Article[] = [
     date: "18 januari 2025",
     category: "Wet DBA",
     minutes: 13,
-    cover: "/media/branche-bouw.jpg",
+    cover: media("branche-bouw.jpg"),
     excerpt:
       "Handhaving is terug. Wat dat betekent voor monteur, engineer en projectleider — en hoe je naheffing voorkomt.",
     sections: [
@@ -292,7 +293,7 @@ export const ARTICLES: Article[] = [
     date: "2 maart 2025",
     category: "Werkvormen",
     minutes: 10,
-    cover: "/media/branche-installatie.jpg",
+    cover: media("branche-installatie.jpg"),
     excerpt:
       "Niet elke opdracht past bij zelfstandigheid. Detachering, uitzenden of vast: wat het je kost en wat het je oplevert.",
     sections: [
@@ -336,7 +337,7 @@ export const ARTICLES: Article[] = [
     date: "11 maart 2025",
     category: "Werkvormen",
     minutes: 9,
-    cover: "/media/branche-bouw.jpg",
+    cover: media("branche-bouw.jpg"),
     excerpt:
       "Steeds vaker: ‘we huren geen ZZP meer in.’ Het werk stopt niet. De vorm verandert. Zo houd je de klus.",
     sections: [
@@ -374,7 +375,7 @@ export const ARTICLES: Article[] = [
     date: "20 mei 2025",
     category: "Praktijk",
     minutes: 8,
-    cover: "/media/hero.jpg",
+    cover: media("hero.jpg"),
     excerpt:
       "Honderden plaatsingen verder. Wat we daarvan geleerd hebben over matchen in bouw, installatie en industrie.",
     sections: [
@@ -415,7 +416,7 @@ export const ARTICLES: Article[] = [
     date: "9 april 2025",
     category: "Wetgeving",
     minutes: 11,
-    cover: "/media/branche-techniek.jpg",
+    cover: media("branche-techniek.jpg"),
     excerpt:
       "Handhaving, verzekeringen, discussie over minimumtarief. Je hoeft geen jurist te zijn. Wel deze drie dingen weten.",
     sections: [
@@ -458,7 +459,7 @@ export const ARTICLES: Article[] = [
     date: "14 januari 2026",
     category: "Praktijk",
     minutes: 10,
-    cover: "/media/branche-techniek.jpg",
+    cover: media("branche-techniek.jpg"),
     excerpt:
       "Geen landelijke mythes. Wat we in Almere, Utrecht en Amsterdam zien — en hoe je niet onder je niveau zakt.",
     sections: [
@@ -495,7 +496,7 @@ export const ARTICLES: Article[] = [
     date: "3 februari 2026",
     category: "Opdrachtgevers",
     minutes: 12,
-    cover: "/media/branche-bouw.jpg",
+    cover: media("branche-bouw.jpg"),
     excerpt:
       "Niet sexy, wél de reden dat inkoop ja of nee zegt. Zo zorg je dat de keten klopt.",
     sections: [
@@ -542,7 +543,7 @@ export const ARTICLES: Article[] = [
     date: "21 maart 2026",
     category: "Praktijk",
     minutes: 8,
-    cover: "/media/branche-installatie.jpg",
+    cover: media("branche-installatie.jpg"),
     excerpt:
       "De meeste mismatches sterven in week één. Dit is onze startprocedure — saai, en daarom effectief.",
     sections: [
@@ -584,7 +585,7 @@ export const ARTICLES: Article[] = [
     date: "8 april 2026",
     category: "Opdrachtgevers",
     minutes: 9,
-    cover: "/media/branche-bouw.jpg",
+    cover: media("branche-bouw.jpg"),
     excerpt:
       "Opdrachtgevers willen zekerheid vóór de poort. Kandidaten willen geen circus. Dit is het midden.",
     sections: [
@@ -625,7 +626,7 @@ export const ARTICLES: Article[] = [
     date: "19 mei 2026",
     category: "Opdrachtgevers",
     minutes: 10,
-    cover: "/media/branche-bouw.jpg",
+    cover: media("branche-bouw.jpg"),
     excerpt:
       "Opleverdruk, ziekte, een fase die uitloopt. De verkeerde werkvorm kost meer dan het tariefverschil.",
     sections: [

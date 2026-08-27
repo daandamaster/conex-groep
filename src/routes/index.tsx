@@ -11,6 +11,7 @@ import {
   COMPARISON,
   FAQ_EMPLOYER,
 } from "@/lib/content";
+import { media } from "@/lib/media";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -45,11 +46,11 @@ function Home() {
           muted
           loop
           playsInline
-          poster="/media/hero.jpg"
+          poster={media("hero.jpg")}
         >
-          <source src="/media/hero.mp4" type="video/mp4" />
+          <source src={media("hero.mp4")} type="video/mp4" />
         </video>
-        <img className="hero-photo" src="/media/hero.jpg" alt="" />
+        <img className="hero-photo" src={media("hero.jpg")} alt="" />
         <div className="hero-grid" />
         <div className="hero-scan" />
         <div className="hero-stage">
@@ -247,7 +248,7 @@ function Home() {
       </div>
 
       <div className="cta-split">
-        <img src="/media/cta-dusk.jpg" alt="" />
+        <img src={media("cta-dusk.jpg")} alt="" />
         <div className="cta-copy">
           <p className="kicker lime">Gesprek</p>
           <h2 className="section-title">
