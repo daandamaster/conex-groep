@@ -50,7 +50,7 @@ function Home() {
         >
           <source src={media("hero.mp4")} type="video/mp4" />
         </video>
-        <img className="hero-photo" src={media("hero.jpg")} alt="" />
+        <img className="hero-photo" src={media("hero.jpg")} alt="Conex Groep – vakmensen in bouw, techniek en installatie" />
         <div className="hero-grid" />
         <div className="hero-scan" />
         <div className="hero-stage">
@@ -158,7 +158,7 @@ function Home() {
             {BRANCHES.map((b) => (
               <TiltCard key={b.slug}>
                 <Link to="/vacatures" search={{ vak: b.title } as never} className="branch-card">
-                  <img src={b.image} alt="" />
+                  <img src={b.image} alt={`Vakmensen in ${b.title} – Conex Groep`} />
                   <div className="txt">
                     <h3>{b.title}</h3>
                     <p>{b.body}</p>
@@ -248,7 +248,7 @@ function Home() {
       </div>
 
       <div className="cta-split">
-        <img src={media("cta-dusk.jpg")} alt="" />
+        <img src={media("cta-dusk.jpg")} alt="Conex Groep – plan een adviesgesprek in Almere" />
         <div className="cta-copy">
           <p className="kicker lime">Gesprek</p>
           <h2 className="section-title">
