@@ -197,7 +197,7 @@ const WORDS = ["werkdag", "opdracht", "match", "klus"];
 
 export function TypeCycle() {
   const [i, setI] = useState(0);
-  const [text, setText] = useState("");
+  const [text, setText] = useState(WORDS[0]); // initial word for crawlers
   const [del, setDel] = useState(false);
 
   useEffect(() => {
