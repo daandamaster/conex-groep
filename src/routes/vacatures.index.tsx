@@ -12,6 +12,17 @@ export const Route = createFileRoute("/vacatures/")({
     vak: typeof s.vak === "string" ? s.vak : undefined,
     type: typeof s.type === "string" ? s.type : undefined,
   }),
+  head: () => ({
+    meta: [
+      { title: "Vacatures in bouw, techniek en installatie — Conex Groep" },
+      {
+        name: "description",
+        content:
+          "Bekijk actuele vacatures bij Conex Groep. Uitzenden, detachering en vast werk in bouw, techniek en installatie. Filter op vakgebied en regio.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "https://garden-beacon-ember-yellow.grok.me/vacatures" }],
+  }),
   component: Vacatures,
 });
 

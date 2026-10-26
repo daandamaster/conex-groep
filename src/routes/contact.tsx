@@ -4,7 +4,20 @@ import { SiteShell } from "@/components/site-shell";
 import { PageHero } from "@/components/page-blocks";
 import { COMPANY } from "@/lib/content";
 
-export const Route = createFileRoute("/contact")({ component: Contact });
+export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: [
+      { title: "Contact & adviesgesprek — Conex Groep Almere" },
+      {
+        name: "description",
+        content:
+          "Plan een vrijblijvend adviesgesprek met Conex Groep in Almere. Bel 036 751 9799 of laat je terugbellen. Transistorstraat 31.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "https://garden-beacon-ember-yellow.grok.me/contact" }],
+  }),
+  component: Contact,
+});
 
 function Contact() {
   const [sent, setSent] = useState(false);

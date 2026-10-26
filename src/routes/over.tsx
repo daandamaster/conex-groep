@@ -3,7 +3,20 @@ import { SiteShell } from "@/components/site-shell";
 import { AdviceCta, PageHero } from "@/components/page-blocks";
 import { TEAM_ROLES, VALUES } from "@/lib/content";
 
-export const Route = createFileRoute("/over")({ component: Over });
+export const Route = createFileRoute("/over")({
+  head: () => ({
+    meta: [
+      { title: "Over ons — Conex Groep | Persoonlijk, lokaal, betrouwbaar" },
+      {
+        name: "description",
+        content:
+          "Conex Groep verbindt technische talenten met de juiste projecten. Persoonlijk, lokaal en betrouwbaar — vanuit Almere.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "https://garden-beacon-ember-yellow.grok.me/over" }],
+  }),
+  component: Over,
+});
 
 function Over() {
   return (
